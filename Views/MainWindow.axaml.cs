@@ -1,4 +1,3 @@
-using System.Diagnostics;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 
@@ -13,6 +12,15 @@ public partial class MainWindow : Window
 
     private void Button_OnClick(object? sender, RoutedEventArgs e)
     {
-        Debug.WriteLine("Click!");
+        if (double.TryParse(Celsius.Text, out double C))
+        {
+            var F = C * (9d / 5d) + 32;
+            Fahreinheit.Text = F.ToString("0.0");
+        }
+        else
+        {
+            Celsius.Text = "0";
+            Fahreinheit.Text = "0";
+        }
     }
 }
