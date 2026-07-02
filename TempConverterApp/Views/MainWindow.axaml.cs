@@ -1,5 +1,4 @@
 using Avalonia.Controls;
-using Avalonia.Interactivity;
 
 namespace TempConverterApp.Views;
 
@@ -10,9 +9,13 @@ public partial class MainWindow : Window
         InitializeComponent();
     }
 
-    private void Button_OnClick(object? sender, RoutedEventArgs e)
+    private void Celsius_TextChanged(object? sender, TextChangedEventArgs e)
     {
-        if (double.TryParse(Celsius.Text, out double C))
+        if (string.IsNullOrEmpty(Celsius.Text) || Celsius.Text == "-")
+        {
+            Fahreinheit.Text = "";
+        }
+        else if (double.TryParse(Celsius.Text, out double C))
         {
             var F = C * (9d / 5d) + 32;
             Fahreinheit.Text = F.ToString("0.0");
