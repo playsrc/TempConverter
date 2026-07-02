@@ -1,7 +1,7 @@
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 
-namespace GetStartedApp.Views;
+namespace TempConverterApp.Views;
 
 public partial class MainWindow : Window
 {

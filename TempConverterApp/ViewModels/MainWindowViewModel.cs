@@ -1,4 +1,4 @@
-﻿namespace GetStartedApp.ViewModels;
+﻿namespace TempConverterApp.ViewModels;
 
 public partial class MainWindowViewModel : ViewModelBase
 {

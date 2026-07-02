@@ -1,6 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 
-namespace GetStartedApp.ViewModels;
+namespace TempConverterApp.ViewModels;
 
 public abstract class ViewModelBase : ObservableObject
 {
