@@ -35,6 +35,6 @@
             <TextBlock Grid.Row="1" Grid.Column="0" Margin="10" Text="Fahreinheit"></TextBlock>
             <TextBox Grid.Row="1" Grid.Column="1" Margin="0 5" Text="0"></TextBox>
         </Grid>
-        <Button HorizontalAlignment="Center" Margin="10">Calculate</Button>
+        <Button HorizontalAlignment="Center" Margin="10" Click="Button_OnClick">Calculate</Button>
     </StackPanel>
 </Window>
